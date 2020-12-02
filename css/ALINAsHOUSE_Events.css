@@ -1,0 +1,634 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  ul.nav_list_home>li:nth-child(3) a {
+    border-bottom: 1px solid white;
+  }
+
+
+
+
+div.banner_insidepage div.photo{
+  background: url(../images/Events/events.jpg) right;
+  width: 100%;
+  padding-top: calc(100vh - 80px);
+  background-size: cover;
+  opacity: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+.animate__fadeIn{
+  animation-duration: 5s;
+}
+
+
+
+
+.events{
+margin-top: 120px;
+}
+.events h1{
+  border-bottom: 1px solid white;
+  font-size: 38px;
+  font-weight: 500;
+  font-family:"Playfair_Display_SC";
+  color: white;
+  text-align: center;
+  margin-left: 100px;
+  display: inline-block;
+  margin-bottom: 50px;
+
+}
+
+.events .irregular{
+  width: 85%;
+  margin: auto;
+}
+
+.events .container{
+  /* border: 10px solid blue; */
+  position: relative;
+  /* height: 600px; */
+  padding-top: 60%;
+  overflow: hidden;
+
+}
+.events .container img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.events .container .aa{
+  width: 50%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+.events .container .bb{
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  text-align: center;
+}
+.events .container .cc{
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top: 39%;
+  text-align: center;
+}
+.events .container .dd{
+  width: 25%;
+  position: absolute;
+  left: 75%;
+  top: 39%;
+  text-align: center;
+}
+.events .container .ee{
+  width: 45%;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  text-align: center;
+}
+.events .container .ff{
+  width: 30%;
+  position: absolute;
+  top: 60%;
+  text-align: center;
+}
+.events .container > div{
+  overflow: hidden;
+  position: relative;
+}
+.events .container >div:hover img{
+  /* opacity: 0.5; */
+  filter: brightness(.5);
+  transform: scale(1.1);
+  transition: all 0.8s ease-out;
+}
+.events span{
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family:"Bell_MT";
+  display: none;
+}
+.events .container >div:hover span{
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.proposal{
+  /* border: 1px solid palevioletred; */
+  /* margin-top: 100px; */
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+div.proposal h1.bigwords{
+  border-bottom: 1px solid white;
+  font-size: 38px;
+  font-weight: 500;
+  font-family:"Playfair_Display_SC";
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: 100px;
+  display: inline-block;
+}
+
+/* 整個頁籤及內容最外層區塊 */
+div.tab_container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* 頁籤區塊 */
+div.tab_container div.tab_list_block{
+  width: 100%;
+  margin-bottom: 2px;
+  text-align: end;
+}
+
+/* 頁籤列表 */
+div.tab_container div.tab_list_block ul.tab_list{
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+div.tab_container div.tab_list_block ul.tab_list > li{
+  display: inline-block;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  color: #464646;
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0 100%);
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  background: #ffffffad;
+  margin-left: -30px;
+  text-align: center;
+}
+
+/* 畫出底部黑線 */
+/* div.tab_container div.tab_list_block ul.tab_list > li > a::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: 1px;
+  background-color: black;
+  bottom:-1px;
+  left: -1px;
+  z-index: 1;
+} */
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+  border: 1px solid white;
+  color: #111111;
+  background: #fff;
+}
+/* 將底部黑線改成白色 */
+/* div.tab_container div.tab_list_block ul.tab_list > li > a.-on::after{
+  background-color:black;
+  width: 100%;
+  left: 0;
+} */
+/* 頁籤內容區塊 */
+div.tab_container div.tab_contents{
+  border: 1px solid white;
+  /* width: 1200px; */
+  width: 100%;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* top: 53px;*/
+}
+
+div.tab_container div.tab_contents div.tab{
+  padding: 20px;
+  display: none;
+}
+div.tab_container div.tab_contents div.tab.-on{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(255 208 156);
+  font-size: 21px;
+  font-family:"Bell_MT";
+}
+/* div.tab_container div.tab_contents div.tab.-on div.photoA{
+} */
+/* div.tab_container div.tab_contents div.tab.-on div.photoB{
+
+}div.tab_container div.tab_contents div.tab.-on div.photoC{
+
+}
+
+div.tab_container div.tab_contents div.tab.-on div.paragraph{
+  border: 1px solid red; 
+} */
+
+div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+}
+
+.proposal .container_in{
+  width: 90%;
+  margin: auto;
+}
+
+
+
+.proposal .paragraph{
+  flex: 0 1 30%;
+  padding: 20px 0;
+}
+.proposal .photoA{
+  flex: 0 1 55%;
+}
+.proposal .photoB{
+  flex: 0 1 55%;
+}
+.proposal .photoC{
+  flex: 0 1 55%;
+}
+.proposal img{
+  width: 100%;
+}
+
+.proposal .smallwords{
+  width: 100%;
+  margin: auto;
+}
+.proposal .smallwords p{
+  padding: 0 12px;
+}
+
+
+.proposal .data_list_table{
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.proposal tbody .top{
+  color: white;
+  font-family:"Bell_MT";
+  font-size: 25px;
+  background: rgb(113, 113, 113, 0.06);
+}
+.proposal tbody th{
+  border: 1px solid white;
+  padding: 8px 0 8px 0;
+
+}
+.proposal tbody td{
+  border: 1px solid white;
+  padding:8px 20px 8px 14px;
+  color: white;
+  font-family:"Bell_MT";
+  text-align: center;
+} 
+
+
+
+
+@media screen and (max-width: 575px){
+
+
+  .events h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  
+  .events .container .aa{
+    position: unset;
+    width: 100%;
+    position: relative;
+  }
+  .events .container .bb{
+    position: unset;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .events .container .cc{
+    position: unset;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .events .container .dd{
+    position: unset;
+    width: 100%;
+    position: relative;
+    left: 0;
+  
+  }
+  .events .container .ee{
+    position: unset;
+    width: 100%;
+    position: relative;
+    left: 0;
+  
+  }
+  .events .container .ff{
+    position: unset;
+    width: 100%;
+    position: relative;
+  }
+  .events .container{
+    padding-top: 0;
+  }
+  .events span{
+    font-size: 24px;
+  }
+  
+
+.proposal .smallwords p {
+  padding: 0px;
+  margin-right: 8px;
+}
+
+.team h1.bigwords{
+  font-size: 25px;
+}
+
+div.proposal h1.bigwords{
+  font-size: 25px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.team .photo_description h1{
+  font-size: 30px;
+}
+
+
+div.tab_container div.tab_contents div.tab.-on{
+  flex-direction: column;
+}
+
+.proposal .smallwords p {
+  padding: 0 0 25px 10px;
+}
+
+div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+  font-size: 25px;
+}
+
+.proposal .smallwords p{
+  font-size: 19px;
+}
+
+
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  padding: 5px 5px;
+  font-size: 20px;
+}
+
+
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  width: 117px;
+}
+
+
+
+
+
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+
+.proposal .smallwords p {
+  padding: 0px;
+  margin-right: 8px;
+}
+
+div.proposal h1.bigwords{
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.events h1{
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+
+
+
+
+.events .container .aa{
+  position: unset;
+  width: 100%;
+  position: relative;
+}
+.events .container .bb{
+  position: unset;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+.events .container .cc{
+  position: unset;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+.events .container .dd{
+  position: unset;
+  width: 100%;
+  position: relative;
+  left: 0;
+
+}
+.events .container .ee{
+  position: unset;
+  width: 100%;
+  position: relative;
+  left: 0;
+
+}
+.events .container .ff{
+  position: unset;
+  width: 100%;
+  position: relative;
+}
+.events .container{
+  padding-top: 0;
+}
+.events span{
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+.team .photo_description h1{
+  font-size: 30px;
+}
+
+
+div.tab_container div.tab_contents div.tab.-on{
+  flex-direction: column;
+}
+
+.proposal .smallwords p {
+  padding: 0 0 25px 10px;
+}
+
+div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  font-size: 23px;
+}
+div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+  font-size: 25px;
+}
+
+.proposal .smallwords p{
+  font-size: 19px;
+}
+
+
+
+}
+
+
+
+@media screen and  (min-width: 768px) and (max-width: 991px){
+  div.brandstory h1.bigwords{
+    font-size: 25px;
+  }
+  .team h1.bigwords{
+    font-size: 25px;
+  }
+  div.proposal h1.bigwords{
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+ 
+  div.tab_container div.tab_list_block ul.tab_list > li > a{
+    font-size: 23px;
+  }
+  div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+    font-size: 26px;
+  }
+  .proposal .smallwords p{
+    font-size: 17px;
+  }
+  .events h1{
+    font-size: 35px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and  (min-width: 992px) and (max-width: 1199px){
+  .events h1{
+    font-size: 35px;
+  }
+  div.proposal h1.bigwords{
+    font-size: 35px;
+  }
+  .proposal .smallwords p{
+    font-size: 20px;
+  }
+  div.tab_container div.tab_contents div.tab.-on div.paragraph h1{
+    margin-bottom: 15px;
+  }
+
+
+
+  div.brandstory h1.bigwords{
+    font-size: 35px;
+  }
+  .team h1.bigwords{
+    font-size: 35px;
+  }
+  div.proposal h1.bigwords{
+    font-size: 35px;
+  }
+  div.brandstory p.middlewords{
+    font-size: 28px;
+  }
+  div.brandstory div.smallwords{
+    font-size: 22px;
+  }
+
+
+
+
+
+}
+@media screen and  (min-width: 1200px){
+
+
+}
+
+img{
+max-width: 100%;
+}

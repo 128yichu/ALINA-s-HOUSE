@@ -1,0 +1,367 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .nav_list_home p {
+    padding: 10px 5px;
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    font-family: "Playfair_Display_SC";
+    letter-spacing: 1px;
+    /* height: 50px; */
+    border-bottom: 1px solid white;
+    margin-bottom: 13px;
+}
+
+
+
+
+
+div.banner_insidepage div.photo{
+  background: url(../images/AboutUs/brand.jpg) right;
+  width: 100%;
+  padding-top: calc(100vh - 80px);
+  background-size: cover;
+  opacity: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+.animate__fadeIn{
+  animation-duration: 5s;
+}
+
+
+
+
+
+
+
+.story{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.story h1{
+  font-size: 35px;
+  font-family: "Playfair_Display_SC";
+  font-weight: 500;
+  color: white;
+  border-bottom: 1px solid white;
+  display: table;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  margin-left: 17px;
+}
+
+
+.story .wrap{
+  max-width: 1200px;
+  margin:auto;
+}
+
+.story .item{
+  display:flex;
+  align-items:center;
+  margin-bottom:60px;
+  justify-content: center;
+}
+.story .item h2{
+  font-size: 33px;
+  font-family:"Bell_MT";
+  margin-bottom: 8px;
+}
+.story .item p{
+  font-size: 18px;
+  font-family:"Bell_MT";
+}
+.story .item .pic{
+  width: 55%;
+  flex-shrink:0;
+}
+
+.story .item .pic img{
+  width: 100%;
+  vertical-align:middle;
+}
+.story .item .txt{
+  width: 54%;
+  /* background-color:#fa8; */
+  flex-shrink:0;
+  padding: 25px 30px 27px 30px;  
+  box-sizing:border-box;
+  position:relative;
+  z-index:1;
+    
+}
+.story .item > :first-child{
+  margin-right:-10%;
+}
+
+
+.story .item:nth-child(1) .txt{
+  background-color: rgba(255,255,255,0.8);
+}
+.story .item:nth-child(2) .txt{
+  background-color: rgba(255,255,255,0.8);
+}
+.story .item:nth-child(3) .txt{
+  background-color: rgba(255,255,255,0.8);
+}
+.story .start{
+  position: absolute;
+  color: rgb(255 208 156);
+  font-family: "Bell_MT";
+  font-size: 60px;
+  /* writing-mode: vertical-lr; */
+  right: 0%;
+  letter-spacing: 3px;
+  top: -64px;
+  opacity: 0.2;
+}
+.story .now{
+  position: absolute;
+  color: rgb(255 208 156);
+  font-family: "Bell_MT";
+  font-size: 60px;
+  /* writing-mode: vertical-lr; */
+  right: 0%;
+  letter-spacing: 3px;
+  top: -64px;
+  opacity: 0.2;
+}
+
+
+
+
+
+
+
+.transition{
+  height: 400px; 
+  width: 100%;
+  background-image: url(../images/AboutUs/transition.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 40%;
+  margin-top: 120px;
+}
+
+
+
+
+
+
+.ambiance{
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 120px;
+  margin: auto;
+}
+
+.ambiance h1{
+  font-size: 35px;
+  font-family: "Playfair_Display_SC";
+  font-weight: 500;
+  color: white;
+  border-bottom: 1px solid white;
+  display: table;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  
+}
+.ambiance .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 1px solid white; */
+}
+
+.ambiance .container .item{
+  position: relative;
+  width: 30%;
+}
+.ambiance .photo{
+  width: 85%;
+  margin: auto;
+}
+.ambiance .container .item button{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 30px;
+  font-size: 20px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-family:"Bell_MT";
+}
+
+
+
+
+
+
+
+.ambiance .frame{
+  /* border: 0.5px solid rgb(255 208 156); 
+  padding: 20px; */
+  position: relative;
+  width: 100%;
+}
+.ambiance .bkc{
+  background: rgb(255, 255, 255, 0.7);
+  /* width: 30%; */
+  /* height: 8%; */
+  z-index: 2;
+  width: 30%;
+  position: absolute;
+  transform: translateY(25px);
+}
+.ambiance span.bigwords{
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  /* line-height: 195%; */
+  padding: 12px 10px;
+  font-family: "Bell_MT";
+  display: block;
+  position: relative;
+}
+
+.ambiance .photo_words{
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.ambiance img{
+  width: 100%;
+  z-index: 1;
+  vertical-align: bottom;
+}
+.ambiance .frame_words{
+  background: rgb(255,255,255,0.8);
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  transform: translateY(100%);
+  transition: .5s;
+  font-family: "Bell_MT";
+  padding: 0 20px 20px 28px;
+}
+.ambiance .frame_words p.title{
+  width: 100%;
+  color: black;
+  display: inline-block;
+  text-align: right;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+.ambiance .frame:hover .frame_words{
+  transform: translateY(30px);
+  color: black;
+  transition: 0.7s;
+}
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+
+  .story .item{
+    flex-direction: column;
+  }
+  .story .item > :first-child{
+    margin-right: 0;
+  }
+  .story .item .pic{
+    width: 100%;
+  }
+  .story .item .txt{
+    width: 100%;
+  }
+  .story .item:nth-child(2) .txt{
+    order: 2;
+  }
+  .story .item:nth-child(2) .pic{
+    order: 1;
+  }
+  .story .start{
+    opacity: 1;
+  }
+  .story .now{
+    opacity: 1;
+  }
+  .ambiance .container{
+    flex-direction: column;
+  }
+  .ambiance .container .item{
+    width: 80%;
+    margin: auto;
+  }
+  .ambiance .frame_words{
+    font-size: 17px;
+  }
+  .ambiance .frame{
+    margin-top: 20px;
+  }
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+
+
+  .ambiance .container{
+    flex-direction: column;
+  }
+  .ambiance .container .item{
+    width: 70%;
+    margin: auto;
+  }
+
+}
+@media screen and  (min-width: 768px) and (max-width: 991px){
+  .ambiance .frame_words{
+    font-size: 14px;
+  }
+
+}
+@media screen and  (min-width: 992px) and (max-width: 1199px){
+  .ambiance span.bigwords{
+    font-size: 19px;
+  }
+  .ambiance .frame_words
+  {
+    font-size: 18px;
+  }
+
+  
+
+}
+@media screen and  (min-width: 1200px){
+}
+
+img{
+max-width: 100%;
+}
+
+

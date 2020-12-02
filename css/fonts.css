@@ -1,0 +1,9 @@
+@font-face{
+    font-family: "Playfair_Display_SC";
+    src: url(../fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: "Bell_MT";
+    src: url(../fonts/Bell-MT/Bell\ MT.ttf) format("truetype");
+}

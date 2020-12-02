@@ -1,0 +1,869 @@
+
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(16,16,16); */
+  background-color: rgb(1,1,1);
+}
+
+
+.logo_nav_home{
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: 0.8s;
+}
+.title_home{
+  /* border: 1px solid palevioletred; */
+  display: inline-block;
+  margin-right: 70px;
+}
+div.title_home a{
+  color: white;
+  font-size: 30px;
+  font-family:"Bell_MT";
+  vertical-align: middle;
+  text-decoration: none;
+}
+div.title_home::before{
+  content: url(../../images/header_footer/navigationLogo.png);
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 17px;
+}
+
+
+  .nav_list_home{
+    /* border: 1px solid purple; */
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+a{
+  text-decoration: none;
+}
+  li{
+    list-style: none;
+  }
+.nav_list_home p{
+  padding: 10px 5px;
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-family:"Playfair_Display_SC";
+  letter-spacing: 1px;
+  line-height: 28px;
+  /* height: 50px; */
+}
+.nav_list_home>li>a{
+  font-size: 25px;
+  padding: 10px 5px;
+  /* border: 1px solid green; */
+  text-decoration: none;
+  color: white;
+  font-family:"Playfair_Display_SC";
+  letter-spacing: 1px;
+
+
+
+}
+.nav_AboutUs_home{
+  /* border: 1px solid yellow; */
+  height: 49px;
+
+}
+.nav_list_home>li:first-child{
+  position: relative;
+}
+.nav_list_home>li:first-child ul{
+  position: absolute;
+  z-index: 2;
+  padding: 0;
+}
+.nav_AboutUs_home ul{
+  width: 100%;
+  background: rgb(0,0,0,0.6);
+  display: none;
+}
+.nav_AboutUs_home ul li{
+  text-align: center;
+  padding: 15px;
+}
+.nav_AboutUs_home ul li a{
+  padding: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-family:"Playfair_Display_SC";
+  letter-spacing: 2px;
+}
+.nav_list_home>li:first-child:hover .nav_AboutUs_home ul{
+  display: block;
+}
+.nav_list_home>li{
+  margin: 0px 15px;
+}
+
+.nav_list_home>li>a:hover{
+  border-bottom: 0.1px solid white;
+  }
+  .nav_AboutUs_home ul li a:hover{
+    border-bottom: 0.1px solid white;
+  }
+
+/* 
+.logo_nav{
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: 0.8s;
+}
+.logo_nav .title{
+  display: inline-block;
+  margin-right: 70px;
+  margin-left: 17px;
+}
+div.title a{
+  color: white;
+  font-size: 30px;
+  font-family:"Bell_MT";
+  vertical-align: middle;
+  text-decoration: none;
+}
+div.title::before{
+  content: url(/images/header_footer/navigationLogo.png);
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+  .nav_list{
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+a{
+  text-decoration: none;
+}
+  li{
+    list-style: none;
+  }
+.nav_list p{
+  padding: 10px 5px;
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-family:"Playfair_Display_SC";
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.nav_list>li>a{
+  font-size: 25px;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: white;
+  font-family:"Playfair_Display_SC";
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+
+
+}
+.nav_AboutUs{
+  height: 49px;
+
+}
+.nav_list>li:first-child{
+  position: relative;
+}
+.nav_list>li:first-child ul{
+  position: absolute;
+  z-index: 2;
+  padding: 0;
+}
+.nav_AboutUs ul{
+  width: 100%;
+  background: rgb(0,0,0,0.6);
+  display: none;
+}
+.nav_AboutUs ul li{
+  text-align: center;
+  padding: 15px;
+}
+.nav_AboutUs ul li a{
+  padding: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-family:"Playfair_Display_SC";
+  letter-spacing: 2px;
+}
+.nav_list>li:first-child:hover .nav_AboutUs ul{
+  display: block;
+}
+.nav_list>li{
+  margin: 0px 15px;
+}
+
+.nav_list>li>a:hover{
+  border-bottom: 0.1px solid white;
+  }
+  .nav_AboutUs ul li a:hover{
+    border-bottom: 0.1px solid white;
+  } */
+
+
+/* 導覽列底線動畫，怪怪的!!!!!!!!!!!!!!!!!!!!因為影響到相同名稱了!!!!!可能需要加CLASS區隔，才能做以下動畫 */
+
+/* .nav_list>li>a>p{
+  position: relative;
+}
+.nav_list>li>a>p:before{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin: auto;
+  transition: .5s;
+}
+.nav_list>li>a:hover p:before{
+  width: 100%;
+}
+.nav_AboutUs ul li a p{
+  position: relative;
+}
+.nav_AboutUs ul li a p:before{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin: auto;
+  transition: .5s;
+}
+.nav_AboutUs ul li a:hover p:before{
+  width: 100%;
+} */
+
+
+
+
+
+
+
+.banner_insidepage span.title{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:"Bell_MT";
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);  }
+.banner_insidepage span.title::before{
+  content: url(../images/Home/bannerLogo.png);
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+  .logo_nav_home{
+    display: none;
+  }
+
+
+
+  nav.clearfix{
+    display: flex;
+    z-index: 1000;
+    justify-content: center; 
+  }
+
+  .title{
+    /* border: 1px solid palevioletred; */
+    display: inline-block;
+    margin-right: 40px;
+  }
+  div.title a{
+    color: white;
+    font-size: 23px;
+    font-family:"Bell_MT";
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  div.title::before{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+
+  nav{
+    width: 100%;
+    /*max-height: 75px;*/
+    padding: 5px 10px 0px 20px;
+    position: fixed;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    /*background-color: #ccc;*/
+  }
+  nav .logo{
+    padding-bottom: 9px;
+    float: left;
+  }
+  nav .logo img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  nav .submenu{
+    text-align: center;
+    font-size: 0;
+    margin: 5px 0;
+  }
+  nav .submenu li a{
+    display: inline-block;
+    font-size: 16px;
+    padding: 20px 10px;
+    color:#8d8d8d;
+    font-family:Microsoft JhengHei;
+    font-weight: bold;
+    transition: .5s;
+    /*border-left: 1px solid #8d8d8d;*/
+  }
+  nav .submenu li a p{
+    position: relative;
+  }
+  nav .submenu li a p:before{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    transition: .5s;
+  }
+  nav .submenu li a:hover{
+    color: white;
+  }
+  nav .submenu li a:hover p:before{
+    width: 100%;
+  }
+  
+  nav .submenu .action p{
+    color: white;
+    position: relative;
+  }
+  nav .submenu .action p:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+  }
+  nav .icon{
+    /*font-size: 0;*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .icon div{
+    display: inline-block;
+  }
+  nav .icon div a{
+    color: #000;
+    transition: .5s;
+  }
+  nav .icon div a:hover{
+    color:rgb(255 208 156);
+  }
+  ::selection{
+    background-color: rgb(255 208 156);
+  }
+  
+  
+  
+  
+  nav input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+  }
+  nav label{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*left: 0;*/
+    right: 20px;
+    margin: auto;
+    font-size: 0;
+  }
+  nav label:before{
+    content: '';
+    width: 26px;
+    height: 3px;
+    background-color: rgb(255 208 156);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 8px 0px rgb(255 208 156),
+    0px -8px 0px rgb(255 208 156);
+  }
+  nav label:after{
+    content: '';
+    width: 26px;
+    height: 3px;
+    background-color: rgb(255 208 156);
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+  }
+  
+
+  
+  nav .icon{
+    display: none;
+  }
+  nav .submenu{
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 71.3px;
+    left: -100vw;
+    transition: .5s;
+  }
+  nav .submenu li + li{
+    border-top: 1px solid #fff;
+  }
+  /* nav .submenu li{
+
+  } */
+  nav .submenu li a{
+    color: #fff;
+    padding: 5%;
+  }
+  nav .submenu li a p{
+    font-size: 20px;
+    font-family: "Playfair_Display_SC";
+    font-weight: 400;
+  }
+  input:checked ~ .submenu{
+    left: 0;
+    top: 60px;
+  }
+  input:checked ~ label:before{
+    background-color: rgb(255 208 156);
+    transition: .5s;
+    transform: rotateZ(45deg);
+    box-shadow: 0px 8px 0px transparent,
+    0px -8px 0px transparent;
+  }
+  input:checked ~ label:after{
+    transition: .5s;
+    transform: rotateZ(-45deg);
+    opacity: 1;
+  }
+
+
+
+  span.title{
+    font-size: 25px;
+  }
+
+  .banner_insidepage span.title{
+    font-size: 40px;
+  }
+  div.whole{
+    padding: 0;
+  }
+ 
+
+
+
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .logo_nav_home{
+    display: none;
+  }
+  
+  span.title{
+    font-size: 40px;
+  }
+
+
+
+  nav.clearfix{
+    display: flex;
+    z-index: 1000;
+    justify-content: center; 
+  }
+
+  .title{
+    /* border: 1px solid palevioletred; */
+    display: inline-block;
+    margin-right: 40px;
+  }
+  div.title a{
+    color: white;
+    font-size: 30px;
+    font-family:"Bell_MT";
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  div.title::before{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+
+  nav{
+    width: 100%;
+    /*max-height: 75px;*/
+    padding: 5px 10px 0px 20px;
+    position: fixed;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    /*background-color: #ccc;*/
+  }
+  nav .logo{
+    padding-bottom: 8px;
+    float: left;
+  }
+  nav .logo img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  nav .submenu{
+    text-align: center;
+    font-size: 0;
+    margin: 5px 0;
+  }
+  nav .submenu li a{
+    display: inline-block;
+    font-size: 16px;
+    padding: 20px 10px;
+    color:#8d8d8d;
+    font-family:Microsoft JhengHei;
+    font-weight: bold;
+    transition: .5s;
+    /*border-left: 1px solid #8d8d8d;*/
+  }
+  nav .submenu li a p{
+    position: relative;
+  }
+  nav .submenu li a p:before{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    transition: .5s;
+  }
+  nav .submenu li a:hover{
+    color: white;
+  }
+  nav .submenu li a:hover p:before{
+    width: 100%;
+  }
+  
+  nav .submenu .action p{
+    color: white;
+    position: relative;
+  }
+  nav .submenu .action p:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+  }
+  nav .icon{
+    /*font-size: 0;*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .icon div{
+    display: inline-block;
+  }
+  nav .icon div a{
+    color: #000;
+    transition: .5s;
+  }
+  nav .icon div a:hover{
+    color:rgb(255 208 156);
+  }
+  ::selection{
+    background-color: rgb(255 208 156);
+  }
+  
+  
+  
+  
+  nav input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+  }
+  nav label{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*left: 0;*/
+    right: 30px;
+    margin: auto;
+    font-size: 0;
+  }
+  nav label:before{
+    content: '';
+    width: 26px;
+    height: 3px;
+    background-color: rgb(255 208 156);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 8px 0px rgb(255 208 156),
+    0px -8px 0px rgb(255 208 156);
+  }
+  nav label:after{
+    content: '';
+    width: 26px;
+    height: 3px;
+    background-color: rgb(255 208 156);
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+  }
+  
+
+  
+  nav .icon{
+    display: none;
+  }
+  nav .submenu{
+    width: 100vw;
+    height: calc(100vh - 71.3px);
+    margin: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 71.3px;
+    left: -100vw;
+    transition: .5s;
+  }
+  nav .submenu li + li{
+    border-top: 1px solid #fff;
+  }
+  /* nav .submenu li{
+
+  } */
+  nav .submenu li a{
+    color: #fff;
+    padding: 5%;
+  }
+  nav .submenu li a p{
+    font-size: 20px;
+    font-family: "Playfair_Display_SC";
+    font-weight: 400;
+  }
+  input:checked ~ .submenu{
+    left: 0;
+    top: 60px;
+  }
+  input:checked ~ label:before{
+    background-color: rgb(255 208 156);
+    transition: .5s;
+    transform: rotateZ(45deg);
+    box-shadow: 0px 8px 0px transparent,
+    0px -8px 0px transparent;
+  }
+  input:checked ~ label:after{
+    transition: .5s;
+    transform: rotateZ(-45deg);
+    opacity: 1;
+  }
+
+
+
+
+}
+
+
+
+
+@media screen and  (min-width: 768px) and (max-width: 991px){
+
+nav.clearfix{
+  display: none;
+}
+
+
+.title_home{
+  margin-right: 0 ;
+}
+
+.nav_list_home{
+margin: 0 ;
+}
+.nav_list_home p{
+font-size: 15px ;
+padding: 10px 0px;
+
+}
+.nav_list_home>li>a{
+font-size: 15px ;
+}
+.nav_list_home>li {
+margin: 0px 8px ; 
+}
+.logo_nav_home{
+  padding: 10px 0;
+}
+div.title_home a{
+  font-size: 22px;
+  font-size: 22px;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+.nav_AboutUs_home ul li a{
+  font-size: 14px;
+}
+.nav_AboutUs_home ul li {
+  padding: 13px 0;
+}
+
+
+
+}
+
+
+
+@media screen and  (min-width: 992px) and (max-width: 1199px){
+
+  nav.clearfix{
+    display: none;
+  }
+
+
+  .title_home{
+    margin-right: 30px ;
+  }
+
+.nav_list_home{
+  margin: 0 ;
+}
+.nav_list_home p{
+  font-size: 20px ;
+}
+.nav_list_home>li>a{
+  font-size: 20px ;
+}
+.nav_list_home>li {
+  margin: 0px 8px ; 
+}
+.logo_nav_home{
+  padding: 10px;
+}
+.nav_AboutUs_home ul li a{
+  font-size: 17px;
+}
+
+
+
+}
+
+
+
+
+@media screen and  (min-width: 1200px){
+
+
+  nav.clearfix{
+    display: none;
+  }
+
+
+
+
+}

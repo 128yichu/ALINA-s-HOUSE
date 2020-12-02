@@ -1,0 +1,512 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+ul.nav_list_home>li:nth-child(4) a {
+  border-bottom: 1px solid white;
+}
+
+
+
+
+div.banner_insidepage div.photo{
+  background: url(../images/Contact/contact.jpg) center;
+  width: 100%;
+  padding-top: calc(100vh - 80px);
+  background-size: cover;
+  opacity: 43%;
+  position: relative;
+  z-index: 0;
+}
+
+
+.animate__fadeIn{
+  animation-duration: 5s;
+}
+
+
+
+
+
+
+  .content{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .content div.map_content{
+    /* border: 1px solid red; */
+    flex: 0 1 49%;
+    position: relative;
+  }
+  div.words{
+    /* border: 1px solid blue; */
+    width: 100%;
+    flex: 0 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  div.content div.frame{
+    border: 1px solid rgb(255 208 156);
+    width: 100%;
+    /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); */
+    position: relative;
+    padding: 30px 20px
+  }
+  div.content div.frame h1{
+    font-size: 35px;
+    font-family:"Playfair_Display_SC";
+    font-weight: 500;
+    color: white;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px; */
+    border: 1px solid black;
+    background-color: black;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+
+  }
+  div.content div.google{
+    width: 100%;
+    overflow: hidden;
+  } 
+ iframe{
+   width: 100%;
+ }
+
+
+
+ div.content div.openinghours{
+  margin-left: 10px;
+}
+div.content div.phonenumber{
+  margin-left: 10px;
+}
+div.content div.address{
+  margin-left: 10px;
+}
+div.content div.openinghours h1{
+  font-size: 31px;
+  font-weight: 500;
+  color: rgb(255 208 156);
+  font-family: "Playfair_Display_SC";
+}
+div.content div.openinghours p{
+  font-size: 24px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+}
+div.content div.phonenumber h1{
+  font-size: 31px;
+  font-weight: 500;
+  color: rgb(255 208 156);
+  font-family: "Playfair_Display_SC";
+}
+div.content div.phonenumber p{
+  font-size: 24px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+}
+div.content div.address h1{
+  font-size: 31px;
+  font-weight: 500;
+  color: rgb(255 208 156);
+  font-family: "Playfair_Display_SC";
+}
+div.content div.address p{
+  font-size: 24px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+}
+hr{
+  border-color: rgb(255 208 156);
+}
+
+ 
+
+
+
+.fillform_picture{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+  margin-top: 100px;
+}
+.fillform_picture .fillform{
+  /* border: 1px solid red; */
+  flex: 0 1 40%;
+  /* position: relative; */
+  /* margin-right: 105px; */
+}
+.fillform_picture .picture{
+  /* border: 1px solid blue; */
+  position: relative;
+  /* margin-top: 95px; */
+  flex: 0 1 38%;
+}
+.fillform_picture .picture img{
+  width: 100%;
+}
+.fillform .frame{
+  border: 1px solid rgb(255 208 156);
+  width: 100%;
+  position: relative;
+  padding: 30px 37px;
+}
+.fillform .content{
+  /* border: 1px solid fuchsia; */
+  width: 100%;
+  margin: auto;
+}
+
+
+.fillform .fillform_title{
+  color: white;
+  font-family:"Playfair_Display_SC";
+  font-size: 35px;
+  border: 1px solid black;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -23px;
+  /* top: 62px; */
+  padding: 0 20px;
+}
+div.fillform label.name{
+  font-size: 30px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+  display: block;
+}
+div.fillform input.name{
+  background-color: transparent;
+  width: 37%;
+  color: white;
+  font-size: 26px;
+  display: inline-block;
+}
+
+div.fillform label.gender{
+  color: rgb(255 208 156);
+  font-size: 30px;
+}
+div.fillform label.email{
+  font-size: 30px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+  display: block;
+}
+div.fillform input.email{
+  background-color: transparent;
+  width: 40%;
+  color: white;
+  font-size: 26px;
+}
+
+div.fillform label.phonenumber{
+  font-size: 30px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+  display: block;
+}
+
+div.fillform input.phonenumber{
+  background-color: transparent;
+  width: 40%;
+  color: white;
+  font-size: 26px;
+}
+div.fillform label.note{
+  font-size: 30px;
+  font-family:"Bell_MT";
+  color: rgb(255 208 156);
+  display: block;
+}
+textarea{
+  background-color: transparent;
+  color: white;
+  font-size: 26px;
+  margin-top: 10px;
+
+}
+
+div.fillform div.item{
+  margin-top: 20px;
+}
+div.fillform div.everyitem{
+  border: 1px solid transparent;
+}
+.fillform .gender{
+  display: inline-block;
+}
+div.fillform input.name{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+div.fillform input.email{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+div.fillform input.phonenumber{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input[type='radio'] +span:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: black;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid black;
+}
+
+input[type='radio']:checked +span:after {
+  background-color: rgb(255 208 156);
+}
+input[type='radio']:checked,
+input[type='radio']:active {
+  outline: none;
+}
+div.radiocircle{
+  display: inline-block;
+  margin-left: 13px;
+
+}
+div.radiocircle input {
+  -webkit-appearance: none;
+}
+div.radiocircle span {
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+  border: 2px solid rgb(255 208 156);
+  display: inline-block;
+  margin-left: -23px;
+  pointer-events: none;
+}
+input.radio{
+  display: inline-block;
+}
+label.gender{
+  display: inline-block;
+
+}
+
+div.booknow{
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+}
+
+div.booknow a{
+  font-size: 24px;
+  color: black;
+  font-weight: 600;
+  background-color: rgb(255 208 156);
+  padding: 5px 20px;
+}
+
+div.booknow a:hover{
+  font-size: 24px;
+  color: rgb(255 208 156);
+  font-weight: 600;
+  background-color: black;
+  padding: 5px 20px;
+  border: 1px solid rgb(255 208 156);
+}
+
+
+
+.fillform_picture .picture span{
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family:"Playfair_Display_SC";
+  font-weight: 600;
+  text-shadow: 0 0 5px black;
+} 
+
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+  .fillform_picture .picture{
+    display: none;
+  }
+
+
+  .content{
+    flex-direction: column;
+  }
+  .content div.map_content{
+    order: 2;
+    margin-top: 80px;
+  }
+hr{
+  margin: 20px 0;
+}
+
+
+
+.fillform .frame {
+  padding: 30px 14px;
+}
+
+div.fillform div.item {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea{
+  width: 290px;
+}
+div.fillform input.name{
+  margin-right: 0;
+  width:85%;
+}
+div.fillform input.phonenumber{
+  margin-right: 0;
+  width: 85%;
+}
+
+div.fillform input.email{
+  margin-right: 0;
+  width: 85%;
+}
+.fillform .gender{
+  margin-top: 10px;
+}
+
+div.content div.frame{
+  width: 95%;
+  margin: auto;
+}
+
+
+
+
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .fillform_picture .picture{
+    display: none;
+  }
+
+
+  .content{
+    flex-direction: column;
+  }
+  .content div.map_content{
+    order: 2;
+    margin-top: 80px;
+  }
+hr{
+  margin: 20px 0;
+}
+div.content div.openinghours{
+  margin-left: 20px;
+}
+div.content div.phonenumber{
+  margin-left: 20px;
+}
+div.content div.address{
+  margin-left: 20px;
+}
+
+
+.fillform .frame {
+  padding: 30px 14px;
+}
+
+div.content div.frame{
+  width: 95%;
+  margin: auto;
+}
+
+
+
+
+}
+@media screen and  (min-width: 768px) and (max-width: 991px){
+
+  .fillform_picture .picture{
+    display: none;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+  .content div.map_content{
+    order: 2;
+    margin-top: 80px;
+  }
+hr{
+  margin: 20px 0;
+}
+div.content div.openinghours{
+  margin-left: 20px;
+}
+div.content div.phonenumber{
+  margin-left: 20px;
+}
+div.content div.address{
+  margin-left: 20px;
+}
+
+div.content div.frame{
+  width: 80%;
+  margin: auto;
+}
+div.words{
+  width: 80%;
+  margin: auto;
+
+}
+
+
+}
+@media screen and  (min-width: 992px) and (max-width: 1199px){
+  .fillform_picture .picture{
+    display: none;
+  }
+
+}
+@media screen and  (min-width: 1200px){
+
+}
+
+img{
+max-width: 100%;
+}

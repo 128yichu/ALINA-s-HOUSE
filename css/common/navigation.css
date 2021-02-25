@@ -336,10 +336,9 @@ a{
     color: white;
     font-size: 23px;
     font-family:"Bell_MT";
-    vertical-align: middle;
     text-decoration: none;
     display: block;
-    width: 85%;
+    width: 80%;
     margin: auto;
   }
 
@@ -363,11 +362,12 @@ a{
     padding: 5px 10px 0px 20px;
     position: fixed;
     z-index: 5;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
     /*background-color: #ccc;*/
   }
   nav .logo{
+    padding-top: 9px;
     padding-bottom: 9px;
     float: left;
   }
@@ -526,10 +526,10 @@ a{
     font-family: "Playfair_Display_SC";
     font-weight: 400;
   }
-  input:checked ~ .submenu{
+  /* input:checked ~ .submenu{
     left: 0;
     top: 50px;
-  }
+  } */
   input:checked ~ label:before{
     background-color: rgb(255 208 156);
     transition: .5s;
@@ -561,6 +561,20 @@ a{
 
 
 }
+
+@media screen and (min-width: 450px) and (max-width: 575px){
+  input:checked ~ .submenu{
+    left: 0;
+    top: 71px;
+  }
+}
+@media screen and (max-width: 449px){
+  input:checked ~ .submenu{
+    left: 0;
+    top: 50px;
+  }
+}
+
 
 
 @media screen and (min-width: 576px) and (max-width: 767px){

@@ -2221,24 +2221,23 @@ div.transition{
   margin: 0 !important;
   }
   .nav_list_home p{
-  font-size: 15px !important;
+  /* font-size: 15px !important; */
   padding: 10px 0px !important;
   
   }
-  .nav_list_home>li>a{
+  /* .nav_list_home>li>a{
   font-size: 15px !important;
-  }
+  } */
   .nav_list_home>li {
   margin: 0px 8px !important; 
   }
   .logo_nav_home{
     padding: 10px 0 !important;
   }
-  div.title_home a{
-    font-size: 22px !important;
+  /* div.title_home a{
     font-size: 22px !important;
     margin-right: 30px !important;
-  }
+  } */
   .nav_AboutUs_home ul li a{
     font-size: 14px !important;
   }

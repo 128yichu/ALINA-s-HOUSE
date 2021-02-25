@@ -25,8 +25,9 @@ body{
 }
 .title_home{
   /* border: 1px solid palevioletred; */
-  display: inline-block;
-  margin-right: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 /* div.title_home a{
   display: inline-block;
@@ -47,7 +48,10 @@ body{
 .title_home img{
   width: 100%;
 }
-
+.title_home>a{
+  width: 24%;
+  font-size: 0;
+}
 
   .nav_list_home{
     /* border: 1px solid purple; */
@@ -56,6 +60,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 0;
   }
 a{
   text-decoration: none;
@@ -327,7 +332,18 @@ a{
     display: inline-block;
     margin-right: 40px;
   }
-  div.title a{
+  div.title>a{
+    color: white;
+    font-size: 23px;
+    font-family:"Bell_MT";
+    vertical-align: middle;
+    text-decoration: none;
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+
+  div.title nav a{
     color: white;
     font-size: 23px;
     font-family:"Bell_MT";
@@ -512,7 +528,7 @@ a{
   }
   input:checked ~ .submenu{
     left: 0;
-    top: 60px;
+    top: 50px;
   }
   input:checked ~ label:before{
     background-color: rgb(255 208 156);
@@ -596,6 +612,7 @@ a{
   nav .logo{
     padding-bottom: 8px;
     float: left;
+    width: 60%;
   }
   nav .logo img{
     width: 100%;
@@ -792,7 +809,7 @@ nav.clearfix{
 margin: 0 ;
 }
 .nav_list_home p{
-font-size: 15px ;
+font-size: 22px ;
 padding: 10px 0px;
 
 }
@@ -805,10 +822,8 @@ margin: 0px 8px ;
 .logo_nav_home{
   padding: 10px 0;
 }
-div.title_home a{
+div.title_home nav a{
   font-size: 22px;
-  font-size: 22px;
-  margin-right: 30px;
   white-space: nowrap;
 }
 .nav_AboutUs_home ul li a{
@@ -817,11 +832,6 @@ div.title_home a{
 .nav_AboutUs_home ul li {
   padding: 13px 0;
 }
-
-.title_home img{
-  width: 75%;
-}
-
 
 }
 

@@ -1174,7 +1174,7 @@ nav.clearfix{
     margin-right: 40px;
     letter-spacing: 0 !important;
     line-height: 0 !important;
-    margin-top: 3.75px !important;
+    /* margin-top: 3.75px !important; */
   }
   div.title a{
     color: white;

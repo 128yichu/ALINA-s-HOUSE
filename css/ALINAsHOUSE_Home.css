@@ -440,7 +440,7 @@ font-family:"Bell_MT";
 .events .container a{
   background-color: white;
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: black;
   padding: 6px 45px;
@@ -449,10 +449,15 @@ font-family:"Bell_MT";
   margin: auto;
   margin-top: 25px;
 }
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .events .container a{
+    font-size: 18px;
+  }
+}
 .events .container a:hover{
   background-color: transparent;
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color:white;
   padding: 6px 45px;
@@ -462,7 +467,11 @@ font-family:"Bell_MT";
   transition: 0.5s;
   margin-top: 25px;
 }
-
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .events .container a:hover{
+    font-size: 18px;
+  }
+}
 
 
 
@@ -570,7 +579,7 @@ font-family:"Bell_MT";
 
 .expert .right .content a{
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: white;
   padding: 6px 45px;
@@ -581,7 +590,7 @@ font-family:"Bell_MT";
 }
 .expert .right .content a:hover{
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: black;
   padding: 6px 45px;
@@ -637,7 +646,7 @@ font-family:"Bell_MT";
 }
 .teamwork .paragraph a{
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: white;
   background-color: black;
@@ -645,9 +654,14 @@ font-family:"Bell_MT";
   border: 1px solid black;
   padding: 6px 45px;
 }
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .teamwork .paragraph a {
+      font-size: 18px;
+  }
+}
 .teamwork .paragraph a:hover{
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: black;
   background-color: transparent;
@@ -656,7 +670,11 @@ font-family:"Bell_MT";
   padding: 6px 45px;
   transition: 0.5s;
 }
-
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .teamwork .paragraph a:hover {
+      font-size: 18px;
+  }
+}
 
 
 
@@ -743,7 +761,7 @@ font-family:"Bell_MT";
 .delicacy a{
   background-color: transparent;
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: rgb(255 208 156);
   padding: 6px 45px;
@@ -753,7 +771,7 @@ font-family:"Bell_MT";
 .delicacy a:hover{
   background-color: rgb(255 208 156);
   font-size: 24px;
-  font-family: "Bell_MT";
+  font-family: "Playfair_Display_SC";
   font-weight: bold;
   color: black;
   padding: 6px 45px;
@@ -1164,12 +1182,12 @@ nav.clearfix{
     vertical-align: middle;
     text-decoration: none;
   }
-  div.title::before{
+  /* div.title::before{
     content: url(../../images/header_footer/navigationLogo.png);
     width: 100%;
     height: 100%;
     vertical-align: middle;
-  }
+  } */
 
 
   nav{
@@ -1744,12 +1762,12 @@ div.title a{
   vertical-align: middle;
   text-decoration: none;
 }
-div.title::before{
+/* div.title::before{
   content: url(../images/header_footer/navigationLogo.png);
   width: 100%;
   height: 100%;
   vertical-align: middle;
-}
+} */
 
 
 nav{
@@ -2300,17 +2318,18 @@ div.paradise_middle{
   margin-top: 15%;
 }
 .expert .right .content a{
-  font-size: 20px;
+  font-size: 18px;
 }
+
 .expert .right .content a:hover{
-  font-size: 20px;
+  font-size: 18px;
 }
 .delicacy a{
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 50%;
 }
 .delicacy a:hover{
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 50%;
 }
 div.information a.reservation{

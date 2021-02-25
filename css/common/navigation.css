@@ -28,19 +28,24 @@ body{
   display: inline-block;
   margin-right: 70px;
 }
-div.title_home a{
+/* div.title_home a{
+  display: inline-block;
   color: white;
   font-size: 30px;
   font-family:"Bell_MT";
   vertical-align: middle;
   text-decoration: none;
-}
-div.title_home::before{
+  width: 100%;
+} */
+/* div.title_home::before{
   content: url(../../images/header_footer/navigationLogo.png);
   width: 100%;
   height: 100%;
   vertical-align: middle;
   margin-left: 17px;
+} */
+.title_home img{
+  width: 100%;
 }
 
 
@@ -289,12 +294,12 @@ a{
   transform: translate(-50%, -50%);
   font-family:"Bell_MT";
   text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);  }
-.banner_insidepage span.title::before{
+/* .banner_insidepage span.title::before{
   content: url(../images/Home/bannerLogo.png);
   width: 100%;
   height: 100%;
   vertical-align: middle;
-}
+} */
 
 
 
@@ -329,11 +334,11 @@ a{
     vertical-align: middle;
     text-decoration: none;
   }
-  div.title::before{
+  /* div.title::before{
     width: 100%;
     height: 100%;
     vertical-align: middle;
-  }
+  } */
 
 
   nav{
@@ -571,11 +576,11 @@ a{
     vertical-align: middle;
     text-decoration: none;
   }
-  div.title::before{
+  /* div.title::before{
     width: 100%;
     height: 100%;
     vertical-align: middle;
-  }
+  } */
 
 
   nav{
@@ -813,6 +818,9 @@ div.title_home a{
   padding: 13px 0;
 }
 
+.title_home img{
+  width: 75%;
+}
 
 
 }
